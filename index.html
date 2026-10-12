@@ -1,0 +1,574 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#173d35">
+
+    <meta name="description"
+          content="감동 숯골냉면 — Traditional Korean cold noodles and Korean cuisine.">
+
+    <title>감동 숯골냉면 | Gamdong Sutgol Naengmyeon</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;600;700;800&family=Noto+Serif+KR:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="css/index.css" type="text/css">
+    <script src="css/js/index.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Announcement -->
+    <div class="announcement">
+        <span class="announcement-dot"></span>
+        <span data-i18n="announcement">
+            정성으로 준비한 한 그릇, 감동을 담아
+        </span>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="top">
+
+        <a href="index.html" class="brand" aria-label="Gamdong home">
+
+            <span class="brand-logo" aria-hidden="true">
+                <svg viewBox="0 0 64 64" fill="none">
+                    <circle cx="32" cy="32" r="29"
+                            stroke="currentColor" stroke-width="1.7"/>
+
+                    <path d="M13 35 Q22 26 32 35 T51 35"
+                          stroke="currentColor" stroke-width="2"
+                          stroke-linecap="round"/>
+
+                    <path d="M17 42 Q24 35 32 42 T47 42"
+                          stroke="currentColor" stroke-width="2"
+                          stroke-linecap="round"/>
+
+                    <path d="M23 17 Q18 24 23 29
+                             M32 14 Q27 22 32 30
+                             M41 17 Q36 24 41 29"
+                          stroke="currentColor" stroke-width="1.8"
+                          stroke-linecap="round"/>
+                </svg>
+            </span>
+
+            <span class="brand-text">
+                <strong data-i18n="brand">감동 숯골냉면</strong>
+                <small>GAMDONG SUTGOL NAENGMYEON</small>
+            </span>
+
+        </a>
+
+        <button class="menu-toggle"
+                id="menuToggle"
+                type="button"
+                aria-label="Open navigation"
+                aria-expanded="false"
+                aria-controls="navigation">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
+
+        <nav class="navigation" id="navigation">
+
+            <a href="index.html" class="active" data-i18n="home">홈</a>
+            <a href="menu.html" data-i18n="menu">메뉴</a>
+            <a href="reservation.html" data-i18n="reservation">예약</a>
+            <a href="about.html" data-i18n="about">소개</a>
+            <a href="contact.html" data-i18n="contact">오시는 길</a>
+
+        </nav>
+
+        <div class="header-actions">
+
+            <button id="languageToggle"
+                    class="language-toggle"
+                    type="button"
+                    aria-label="Switch to English">
+
+                <span class="lang-ko active">KROREAN</span>
+                <span class="divider">/</span>
+                <span class="lang-en">ENGLISH</span>
+
+            </button>
+
+            <a href="tel:0428229285"
+               class="call-button"
+               aria-label="Call restaurant">
+
+                <span>☎</span>
+                <span data-i18n="call">전화 문의</span>
+
+            </a>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <!-- Hero -->
+        <section class="hero">
+
+            <div class="hero-image" role="img"
+                 aria-label="Korean noodles served in a traditional bowl"></div>
+
+            <div class="hero-shade"></div>
+
+            <div class="hero-content">
+
+                <p class="eyebrow">
+                    <span class="gold-line"></span>
+                    THE SOUL OF KOREAN NOODLES
+                </p>
+
+                <h1 data-i18n="heroTitle">
+                    한 그릇에 담은<br>
+                    <em>정성과 전통</em>
+                </h1>
+
+                <p class="hero-description" data-i18n="heroDescription">
+                    시원한 육수와 정갈한 재료, 그리고 변함없는 마음.
+                    <br>
+                    감동 숯골냉면에서 한국의 맛을 만나보세요.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="menu.html" class="button button-gold">
+                        <span data-i18n="exploreMenu">메뉴 보기</span>
+                        <span>↗</span>
+                    </a>
+
+                    <a href="#story" class="button button-outline">
+                        <span data-i18n="ourStory">우리 이야기</span>
+                        <span>↓</span>
+                    </a>
+
+                </div>
+
+                <div class="hero-caption">
+                    <span class="gold-line"></span>
+                    <span data-i18n="heroCaption">
+                        좋은 음식은 마음에서 시작됩니다.
+                    </span>
+                </div>
+
+            </div>
+
+            <div class="hero-seal" aria-hidden="true">
+                <span>정성</span>
+                <i></i>
+                <span>전통</span>
+                <small>GAMDONG</small>
+            </div>
+
+            <div class="hero-bottom">
+                <span>01 / 05</span>
+                <span>A TASTE TO REMEMBER</span>
+            </div>
+
+        </section>
+
+        <!-- Brand message -->
+        <section class="brand-message">
+            <span>✳</span>
+            <p data-i18n="brandMessage">
+                한 그릇의 여유, 오래 기억되는 맛.
+            </p>
+            <span>✳</span>
+        </section>
+
+        <!-- Story -->
+        <section class="story section-container" id="story">
+
+            <div class="story-images">
+
+                <div class="story-image-main"
+                     role="img"
+                     aria-label="Korean food and traditional ingredients"></div>
+
+                <div class="story-image-small"
+                     role="img"
+                     aria-label="A beautifully prepared Korean meal"></div>
+
+                <div class="story-seal">
+                    <small>MADE WITH</small>
+                    <strong>정성</strong>
+                    <small>SERVED WITH HEART</small>
+                </div>
+
+            </div>
+
+            <div class="story-content">
+
+                <p class="eyebrow eyebrow-dark">
+                    <span class="gold-line"></span>
+                    <span data-i18n="storyEyebrow">OUR PHILOSOPHY</span>
+                </p>
+
+                <h2 data-i18n="storyTitle">
+                    맛은 정직하게,<br>
+                    <em>마음은 따뜻하게.</em>
+                </h2>
+
+                <p class="body-copy" data-i18n="storyDescription">
+                    좋은 한 끼는 배를 채우는 것 이상의 의미가 있습니다.
+                    익숙한 맛에서 편안함을 느끼고, 함께한 사람과의 순간을
+                    오래 기억하도록. 감동 숯골냉면은 정성과 한국 음식의
+                    따뜻한 마음을 전합니다.
+                </p>
+
+                <a href="about.html" class="text-link">
+                    <span data-i18n="readStory">감동의 이야기 더 보기</span>
+                    <span>↗</span>
+                </a>
+
+                <p class="signature" data-i18n="signature">
+                    정성껏 준비하고, 마음으로 대접합니다.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- Featured menu -->
+        <section class="featured-menu">
+
+            <div class="section-container">
+
+                <div class="section-heading">
+
+                    <div>
+                        <p class="eyebrow eyebrow-dark">
+                            <span class="gold-line"></span>
+                            THE MENU
+                        </p>
+
+                        <h2 data-i18n="menuTitle">
+                            다시 생각나는<br>
+                            <em>우리의 대표 메뉴</em>
+                        </h2>
+                    </div>
+
+                    <div class="heading-description">
+
+                        <p data-i18n="menuDescription">
+                            시원한 냉면부터 함께 즐기기 좋은 메뉴까지.
+                            <br>
+                            취향에 맞는 한 끼를 골라보세요.
+                        </p>
+
+                        <a href="menu.html" class="text-link">
+                            <span data-i18n="allMenu">전체 메뉴 보기</span>
+                            <span>↗</span>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="dish-grid">
+
+                    <article class="dish-card">
+
+                        <a href="menu.html"
+                           class="dish-image dish-cold"
+                           aria-label="Explore cold noodles">
+
+                            <span class="dish-number">01</span>
+                            <span class="dish-tag">SIGNATURE</span>
+
+                        </a>
+
+                        <div class="dish-details">
+                            <div>
+                                <h3 data-i18n="coldNoodles">물냉면</h3>
+                                <p data-i18n="coldDescription">
+                                    시원하고 깊은 육수
+                                </p>
+                            </div>
+                            <span class="dish-price">₩11,000</span>
+                        </div>
+
+                    </article>
+
+                    <article class="dish-card">
+
+                        <a href="menu.html"
+                           class="dish-image dish-bibim"
+                           aria-label="Explore bibim naengmyeon">
+
+                            <span class="dish-number">02</span>
+                            <span class="dish-tag">SAVOURY & SPICY</span>
+
+                        </a>
+
+                        <div class="dish-details">
+                            <div>
+                                <h3 data-i18n="bibimNoodles">비빔냉면</h3>
+                                <p data-i18n="bibimDescription">
+                                    매콤달콤한 양념과 쫄깃한 면
+                                </p>
+                            </div>
+                            <span class="dish-price">₩12,000</span>
+                        </div>
+
+                    </article>
+
+                    <article class="dish-card">
+
+                        <a href="menu.html"
+                           class="dish-image dish-mandu"
+                           aria-label="Explore Korean dumplings">
+
+                            <span class="dish-number">03</span>
+                            <span class="dish-tag">A PERFECT SIDE</span>
+
+                        </a>
+
+                        <div class="dish-details">
+                            <div>
+                                <h3 data-i18n="mandu">만두</h3>
+                                <p data-i18n="manduDescription">
+                                    함께 즐기기 좋은 곁들임
+                                </p>
+                            </div>
+                            <span class="dish-price">₩7,000</span>
+                        </div>
+
+                    </article>
+
+                    <article class="dish-card">
+
+                        <a href="menu.html"
+                           class="dish-image dish-baeksuk"
+                           aria-label="Explore baeksuk">
+
+                            <span class="dish-number">04</span>
+                            <span class="dish-tag">COMFORT FOOD</span>
+
+                        </a>
+
+                        <div class="dish-details">
+                            <div>
+                                <h3 data-i18n="baeksuk">백숙</h3>
+                                <p data-i18n="baeksukDescription">
+                                    정성껏 준비한 따뜻한 한 상
+                                </p>
+                            </div>
+                            <span class="dish-price">₩45,000</span>
+                        </div>
+
+                    </article>
+
+                </div>
+
+                <p class="price-note" data-i18n="priceNote">
+                    ※ 메뉴와 가격은 예시이며 실제 매장 메뉴 및 가격을 확인한 뒤 게시하세요.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- Restaurant values -->
+        <section class="values-section">
+
+            <div class="values-background"></div>
+            <div class="values-overlay"></div>
+
+            <div class="values-content section-container">
+
+                <p class="eyebrow">
+                    <span class="gold-line"></span>
+                    A SIMPLE PROMISE
+                </p>
+
+                <h2 data-i18n="valuesTitle">
+                    좋은 재료, 정직한 맛,<br>
+                    <em>함께하는 즐거움.</em>
+                </h2>
+
+                <p data-i18n="valuesDescription">
+                    익숙해서 더 소중한 한국의 맛을 편안한 식탁 위에 전합니다.
+                </p>
+
+                <div class="values-grid">
+
+                    <div class="value-item">
+                        <span>01</span>
+                        <h3 data-i18n="valueOne">정성을 담아</h3>
+                        <p data-i18n="valueOneDescription">
+                            한 그릇마다 마음을 담습니다.
+                        </p>
+                    </div>
+
+                    <div class="value-item">
+                        <span>02</span>
+                        <h3 data-i18n="valueTwo">한국의 맛</h3>
+                        <p data-i18n="valueTwoDescription">
+                            익숙하고 편안한 맛을 전합니다.
+                        </p>
+                    </div>
+
+                    <div class="value-item">
+                        <span>03</span>
+                        <h3 data-i18n="valueThree">함께하는 식탁</h3>
+                        <p data-i18n="valueThreeDescription">
+                            좋은 사람과 좋은 한 끼를 나눕니다.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Visit / contact -->
+        <section class="visit-section section-container">
+
+            <div class="visit-content">
+
+                <p class="eyebrow eyebrow-dark">
+                    <span class="gold-line"></span>
+                    COME AND VISIT
+                </p>
+
+                <h2 data-i18n="visitTitle">
+                    오늘, 감동 한 그릇<br>
+                    <em>어떠세요?</em>
+                </h2>
+
+                <p data-i18n="visitDescription">
+                    메뉴가 궁금하시거나 방문 관련 문의가 있으시면
+                    전화로 편하게 연락해 주세요.
+                </p>
+
+                <a href="tel:0428229285" class="button button-green">
+                    <span>☎</span>
+                    <span data-i18n="phoneButton">042-822-9285 전화 문의</span>
+                </a>
+
+                <p class="visit-note" data-i18n="visitNote">
+                    방문 전 영업시간과 메뉴를 전화로 확인해 주세요.
+                </p>
+
+            </div>
+
+            <div class="contact-card">
+
+                <div class="contact-card-heading">
+                    <span class="mini-logo">감동</span>
+                    <span>YOUR TABLE IS WAITING</span>
+                </div>
+
+                <div class="contact-card-body">
+
+                    <h3 data-i18n="brand">감동 숯골냉면</h3>
+                    <p class="romanized">
+                        GAMDONG SUTGOL NAENGMYEON
+                    </p>
+
+                    <div class="contact-detail">
+                        <span class="detail-symbol">☎</span>
+                        <div>
+                            <small data-i18n="phoneLabel">전화</small>
+                            <strong>042-822-9285</strong>
+                        </div>
+                    </div>
+
+                    <div class="contact-detail">
+                        <span class="detail-symbol">⌖</span>
+                        <div>
+                            <small data-i18n="locationLabel">위치</small>
+                            <strong data-i18n="locationDescription">
+                                방문 전 전화로 주소를 확인해 주세요.
+                            </strong>
+                        </div>
+                    </div>
+
+                    <a href="contact.html" class="text-link">
+                        <span data-i18n="contactDetails">연락처 및 위치 안내</span>
+                        <span>↗</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="footer-main">
+
+            <a href="index.html" class="brand footer-brand">
+
+                <span class="brand-logo" aria-hidden="true">
+                    <svg viewBox="0 0 64 64" fill="none">
+                        <circle cx="32" cy="32" r="29"
+                                stroke="currentColor" stroke-width="1.7"/>
+                        <path d="M13 35 Q22 26 32 35 T51 35
+                                 M17 42 Q24 35 32 42 T47 42
+                                 M23 17 Q18 24 23 29
+                                 M32 14 Q27 22 32 30
+                                 M41 17 Q36 24 41 29"
+                              stroke="currentColor" stroke-width="1.8"
+                              stroke-linecap="round"/>
+                    </svg>
+                </span>
+
+                <span class="brand-text">
+                    <strong data-i18n="brand">감동 숯골냉면</strong>
+                    <small>GAMDONG SUTGOL NAENGMYEON</small>
+                </span>
+
+            </a>
+
+            <p data-i18n="footerMessage">
+                정성껏 준비하고, 마음으로 대접합니다.
+            </p>
+
+            <a href="tel:0428229285" class="footer-phone">
+                ☎ 042-822-9285
+            </a>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <span>
+                © <span id="currentYear"></span>
+                Gamdong Sutgol Naengmyeon.
+                <span data-i18n="rights">All rights reserved.</span>
+            </span>
+
+            <div class="footer-links">
+                <a href="menu.html" data-i18n="menu">메뉴</a>
+                <a href="about.html" data-i18n="about">소개</a>
+                <a href="contact.html" data-i18n="contact">오시는 길</a>
+            </div>
+
+            <a href="#top" class="back-to-top" aria-label="Back to top">
+                ↑
+            </a>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#173d35">
+
+  <meta name="description"
+        content="감동 숯골냉면 — Traditional Korean cold noodles and Korean food, prepared with care.">
+
+  <title>메뉴 | 감동 숯골냉면 · Gamdong Sutgol Naengmyeon</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="css/menu.css" type="text/css">
+  <script src="css/js/menu.js" defer></script>
+</head>
+
+<body>
+
+  <!-- ANNOUNCEMENT -->
+  <div class="announcement">
+    <span class="announcement-dot"></span>
+    <span data-i18n="announcement">
+      정성껏 준비한 한 그릇, 감동을 담아
+    </span>
+  </div>
+
+  <!-- HEADER -->
+  <header class="site-header">
+
+    <!-- CUSTOM RESTAURANT LOGO -->
+    <a class="brand" href="index.html" aria-label="Gamdong Sutgol Naengmyeon home">
+
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 64 64" role="img">
+          <circle cx="32" cy="32" r="29"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"/>
+
+          <path d="M13 35c6-7 12-7 19 0s13 7 19 0"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.2"
+                stroke-linecap="round"/>
+
+          <path d="M17 42c5-5 10-5 15 0s10 5 15 0"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"/>
+
+          <path d="M23 17c-4 5-4 9 0 13M32 14c-4 6-4 11 0 16M41 17c-4 5-4 9 0 13"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"/>
+
+          <circle cx="32" cy="32" r="2.2" fill="currentColor"/>
+        </svg>
+      </span>
+
+      <span class="brand-copy">
+        <strong data-i18n="brandName">감동 숯골냉면</strong>
+        <small>GAMDONG SUTGOL NAENGMYEON</small>
+      </span>
+
+    </a>
+
+    <!-- NAVIGATION -->
+    <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+      <a href="index.html" data-i18n="navHome">홈</a>
+      <a href="menu.html" class="active" data-i18n="navMenu">메뉴</a>
+      <a href="reservation.html" data-i18n="navReservation">예약</a>
+      <a href="about.html" data-i18n="navAbout">소개</a>
+      <a href="contact.html" data-i18n="navContact">오시는 길</a>
+    </nav>
+
+    <!-- HEADER BUTTONS -->
+    <div class="header-actions">
+
+      <button class="language-toggle"
+              id="languageToggle"
+              type="button"
+              aria-label="Switch language">
+
+        <span class="lang-ko active">KROREAN</span>
+        <span class="lang-divider">/</span>
+        <span class="lang-en">ENGLISH</span>
+
+      </button>
+
+      <a class="call-button" href="tel:+82428229285">
+        <span aria-hidden="true">☎</span>
+        <span data-i18n="callUs">전화 문의</span>
+      </a>
+
+      <button class="menu-toggle"
+              id="menuToggle"
+              aria-label="Open navigation"
+              aria-expanded="false"
+              aria-controls="mainNav">
+
+        <span></span>
+        <span></span>
+
+      </button>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO SECTION -->
+    <section class="menu-hero">
+
+      <div class="hero-image"
+           role="img"
+           aria-label="Korean naengmyeon noodles in a bowl">
+      </div>
+
+      <div class="hero-shade"></div>
+
+      <div class="hero-content">
+
+        <p class="eyebrow">
+          <span class="eyebrow-line"></span>
+          <span data-i18n="heroEyebrow">
+            THE TASTE OF KOREAN TRADITION
+          </span>
+        </p>
+
+        <h1 data-i18n="heroTitle">
+          한 그릇에 담은<br>
+          <em>정성과 전통</em>
+        </h1>
+
+        <p class="hero-description" data-i18n="heroDescription">
+          깊고 시원한 육수, 정갈한 재료, 변함없는 마음.
+          <br class="desktop-break">
+          감동 숯골냉면의 메뉴를 만나보세요.
+        </p>
+
+        <a class="hero-link" href="#menu-list">
+          <span data-i18n="exploreMenu">메뉴 둘러보기</span>
+          <span aria-hidden="true">↘</span>
+        </a>
+
+      </div>
+
+      <div class="hero-stamp">
+        <span>SINCE</span>
+        <strong>GAMDONG</strong>
+        <span>MADE WITH CARE</span>
+      </div>
+
+    </section>
+
+    <!-- WELCOME STRIP -->
+    <section class="welcome-strip">
+
+      <span class="strip-symbol" aria-hidden="true">✳</span>
+
+      <p data-i18n="welcomeText">
+        좋은 재료와 정성으로 준비합니다.
+        메뉴 가격은 매장 상황에 따라 달라질 수 있습니다.
+      </p>
+
+      <span class="strip-symbol" aria-hidden="true">✳</span>
+
+    </section>
+
+    <!-- MENU SECTION -->
+    <section class="menu-section section-wrap" id="menu-list">
+
+      <div class="section-heading">
+
+        <div>
+          <p class="eyebrow dark">
+            <span class="eyebrow-line"></span>
+            <span data-i18n="menuEyebrow">OUR MENU</span>
+          </p>
+
+          <h2 data-i18n="menuHeading">
+            맛있는 순간을 <em>골라보세요</em>
+          </h2>
+        </div>
+
+        <p class="heading-note" data-i18n="menuNote">
+          대표 냉면부터 곁들이기 좋은 메뉴까지
+          <br>
+          취향에 맞게 즐겨보세요.
+        </p>
+
+      </div>
+
+      <!-- MENU CATEGORY FILTERS -->
+      <div class="category-tabs" role="tablist" aria-label="Menu categories">
+
+        <button class="category-tab active"
+                data-category="all"
+                role="tab"
+                aria-selected="true"
+                data-i18n="catAll">
+          전체 메뉴
+        </button>
+
+        <button class="category-tab"
+                data-category="signature"
+                role="tab"
+                aria-selected="false"
+                data-i18n="catSignature">
+          대표 메뉴
+        </button>
+
+        <button class="category-tab"
+                data-category="side"
+                role="tab"
+                aria-selected="false"
+                data-i18n="catSide">
+          곁들임
+        </button>
+
+        <button class="category-tab"
+                data-category="drink"
+                role="tab"
+                aria-selected="false"
+                data-i18n="catDrink">
+          주류 · 음료
+        </button>
+
+      </div>
+
+      <!-- DISH CARDS -->
+      <div class="menu-grid" id="menuGrid">
+
+        <!-- 01: BAEKSUK -->
+        <article class="menu-card" data-category="signature">
+
+          <div class="dish-photo photo-baeksuk">
+            <span class="dish-badge" data-i18n="badgeHouse">
+              정성 메뉴
+            </span>
+            <span class="dish-number">01</span>
+          </div>
+
+          <div class="dish-info">
+
+            <div class="dish-title-row">
+              <h3 data-i18n="dishBaeksuk">백숙</h3>
+              <strong>₩45,000</strong>
+            </div>
+
+            <p data-i18n="descBaeksuk">
+              정성껏 푹 고아 깊은 맛을 담은 따뜻한 한 상.
+            </p>
+
+            <span class="dish-tag" data-i18n="tagWarm">
+              따뜻한 요리
+            </span>
+
+          </div>
+        </article>
+
+        <!-- 02: MUL NAENGMYEON -->
+        <article class="menu-card" data-category="signature">
+
+          <div class="dish-photo photo-naengmyeon">
+
+            <span class="dish-badge" data-i18n="badgePopular">
+              인기 메뉴
+            </span>
+
+            <span class="dish-number">02</span>
+
+          </div>
+
+          <div class="dish-info">
+
+            <div class="dish-title-row">
+              <h3 data-i18n="dishMul">냉면</h3>
+              <strong>₩11,000</strong>
+            </div>
+
+            <p data-i18n="descMul">
+              메밀면과 시원하고 깊은 육수가 어우러진 대표 냉면.
+            </p>
+
+            <span class="dish-tag" data-i18n="tagCool">
+              시원한 별미
+            </span>
+
+          </div>
+        </article>
+
+        <!-- 03: BIBIM NAENGMYEON -->
+        <article class="menu-card" data-category="signature">
+
+          <div class="dish-photo photo-bibim">
+            <span class="dish-number">03</span>
+          </div>
+
+          <div class="dish-info">
+
+            <div class="dish-title-row">
+              <h3 data-i18n="dishBibim">비빔냉면</h3>
+              <strong>₩12,000</strong>
+            </div>
+
+            <p data-i18n="descBibim">
+              매콤달콤한 양념과 쫄깃한 면발의 맛있는 조화.
+            </p>
+
+            <span class="dish-tag" data-i18n="tagSpicy">
+              매콤한 맛
+            </span>
+
+          </div>
+        </article>
+
+        <!-- 04: NAENG GOPBAEGI -->
+        <article class="menu-card" data-category="signature">
+
+          <div class="dish-photo photo-naenggop">
+            <span class="dish-number">04</span>
+          </div>
+
+          <div class="dish-info">
+
+            <div class="dish-title-row">
+              <h3 data-i18n="dishNaengGop">냉곰배기</h3>
+              <strong>₩14,000</strong>
+            </div>
+
+            <p data-i18n="descNaengGop">
+              시원한 육수와 풍성한 고명이 어우러지는 별미.
+            </p>
+
+            <span class="dish-tag" data-i18n="tagHouse">
+              매장 별미
+            </span>
+
+          </div>
+        </article>
+
+        <!-- 05: BIBIM GOPBAEGI -->
+        <article class="menu-card" data-category="signature">
+
+          <div class="dish-photo photo-bibimGop">
+            <span class="dish-number">05</span>
+          </div>
+
+          <div class="dish-info">
+
+            <div class="dish-title-row">
+              <h3 data-i18n="dishBibimGop">비곰배기</h3>
+              <strong>₩15,000</strong>
+            </div>
+
+            <p data-i18n="descBibimGop">
+              풍미 있는 양념으로 즐기는 든든한 면 요리.
+            </p>
+
+            <span class="dish-tag" data-i18n="tagRich">
+              진한 풍미
+            </span>
+
+          </div>
+        </article>
+
+        <!-- 06: MANDU -->
+        <article class="menu-card" data-category="side">
+
+          <div class="dish-photo photo-mandu">
+            <span class="dish-number">06</span>
+          </div>
+
+          <div class="dish-info">
+
+            <div class="dish-title-row">
+              <h3 data-i18n="dishMandu">만두</h3>
+              <strong>₩7,000</strong>
+            </div>
+
+            <p data-i18n="descMandu">
+              면 요리와 함께 즐기기 좋은 든든한 만두.
+            </p>
+
+            <span class="dish-tag" data-i18n="tagSide">
+              곁들이기 좋은 메뉴
+            </span>
+
+          </div>
+        </article>
+
+        <!-- 07: EXTRA NOODLES -->
+        <article class="menu-card" data-category="side">
+
+          <div class="dish-photo photo-sari">
+            <span class="dish-number">07</span>
+          </div>
+
+          <div class="dish-info">
+
+            <div class="dish-title-row">
+              <h3 data-i18n="dishSari">사리</h3>
+              <strong>₩6,000</strong>
+            </div>
+
+            <p data-i18n="descSari">
+              더 푸짐하게 즐기고 싶을 때 추가하는 면 사리.
+            </p>
+
+            <span class="dish-tag" data-i18n="tagExtra">
+              추가 메뉴
+            </span>
+
+          </div>
+        </article>
+
+        <!-- 08: SOJU -->
+        <article class="menu-card drink-card" data-category="drink">
+
+          <div class="drink-art soju-art">
+            <span class="drink-bottle">眞露</span>
+            <span class="drink-glass"></span>
+          </div>
+
+          <div class="dish-info">
+
+            <div class="dish-title-row">
+              <h3 data-i18n="dishSoju">소주</h3>
+              <strong>₩5,000</strong>
+            </div>
+
+            <p data-i18n="descSoju">
+              한국 식탁에 빠질 수 없는 대표 증류주.
+            </p>
+
+            <span class="dish-tag" data-i18n="tagAlcohol">
+              주류
+            </span>
+
+          </div>
+        </article>
+
+        <!-- 09: BEER -->
+        <article class="menu-card drink-card" data-category="drink">
+
+          <div class="drink-art beer-art">
+            <span class="beer-glass">맥주</span>
+          </div>
+
+          <div class="dish-info">
+
+            <div class="dish-title-row">
+              <h3 data-i18n="dishBeer">맥주</h3>
+              <strong>₩5,000</strong>
+            </div>
+
+            <p data-i18n="descBeer">
+              시원하게 곁들이기 좋은 차가운 맥주.
+            </p>
+
+            <span class="dish-tag" data-i18n="tagAlcohol">
+              주류
+            </span>
+
+          </div>
+        </article>
+
+        <!-- 10: SOFT DRINK -->
+        <article class="menu-card drink-card" data-category="drink">
+
+          <div class="drink-art soda-art">
+            <span class="soda-can">SODA</span>
+          </div>
+
+          <div class="dish-info">
+
+            <div class="dish-title-row">
+              <h3 data-i18n="dishDrink">음료수</h3>
+              <strong>₩2,000</strong>
+            </div>
+
+            <p data-i18n="descDrink">
+              식사와 함께 즐기는 시원한 음료.
+            </p>
+
+            <span class="dish-tag" data-i18n="tagSoft">
+              음료
+            </span>
+
+          </div>
+        </article>
+
+        <!-- 11: CHEONGHA -->
+        <article class="menu-card drink-card" data-category="drink">
+
+          <div class="drink-art cheongha-art">
+            <span class="bottle-label">청하</span>
+          </div>
+
+          <div class="dish-info">
+
+            <div class="dish-title-row">
+              <h3 data-i18n="dishCheongha">청하</h3>
+              <strong>₩5,000</strong>
+            </div>
+
+            <p data-i18n="descCheongha">
+              깔끔한 맛으로 즐기는 한국의 청주.
+            </p>
+
+            <span class="dish-tag" data-i18n="tagTraditional">
+              전통주
+            </span>
+
+          </div>
+        </article>
+
+        <!-- 12: BAEKSEJU -->
+        <article class="menu-card drink-card" data-category="drink">
+
+          <div class="drink-art baekseju-art">
+            <span class="bottle-label">百歲酒</span>
+          </div>
+
+          <div class="dish-info">
+
+            <div class="dish-title-row">
+              <h3 data-i18n="dishBaekseju">백세주</h3>
+              <strong>₩8,000</strong>
+            </div>
+
+            <p data-i18n="descBaekseju">
+              향긋한 한방 풍미가 특징인 전통주.
+            </p>
+
+            <span class="dish-tag" data-i18n="tagTraditional">
+              전통주
+            </span>
+
+          </div>
+        </article>
+
+        <!-- 13: BOKBUNJA -->
+        <article class="menu-card drink-card" data-category="drink">
+
+          <div class="drink-art bokbunja-art">
+            <span class="bottle-label">복분자</span>
+          </div>
+
+          <div class="dish-info">
+
+            <div class="dish-title-row">
+              <h3 data-i18n="dishBokbunja">복분자</h3>
+              <strong>₩12,000</strong>
+            </div>
+
+            <p data-i18n="descBokbunja">
+              짙은 베리 향과 색을 가진 한국의 과실주.
+            </p>
+
+            <span class="dish-tag" data-i18n="tagFruit">
+              과실주
+            </span>
+
+          </div>
+        </article>
+
+      </div>
+
+      <!-- PRICE DISCLAIMER -->
+      <p class="menu-disclaimer">
+        <span aria-hidden="true">✳</span>
+        <span data-i18n="disclaimer">
+          메뉴와 가격은 매장 사정에 따라 변경될 수 있습니다.
+          정확한 가격은 매장에서 확인해 주세요.
+        </span>
+      </p>
+
+    </section>
+
+    <!-- CLOSING BANNER -->
+    <section class="closing-banner">
+
+      <div class="closing-image" role="img" aria-label="Traditional Korean meal"></div>
+      <div class="closing-overlay"></div>
+
+      <div class="closing-content">
+
+        <p class="eyebrow">
+          <span class="eyebrow-line"></span>
+          <span data-i18n="closingEyebrow">A TABLE MADE WITH CARE</span>
+        </p>
+
+        <h2 data-i18n="closingTitle">
+          오늘의 식사에<br>
+          <em>작은 감동을.</em>
+        </h2>
+
+        <p data-i18n="closingText">
+          궁금한 메뉴가 있으신가요?
+          편하게 전화로 문의해 주세요.
+        </p>
+
+        <a href="tel:+82428229285" class="closing-button">
+          <span data-i18n="closingButton">042-822-9285 전화하기</span>
+          <span aria-hidden="true">↗</span>
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+
+    <div class="footer-top">
+
+      <a class="brand footer-brand" href="index.html">
+
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 64 64">
+            <circle cx="32" cy="32" r="29"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"/>
+
+            <path d="M13 35c6-7 12-7 19 0s13 7 19 0
+                     M17 42c5-5 10-5 15 0s10 5 15 0
+                     M23 17c-4 5-4 9 0 13
+                     M32 14c-4 6-4 11 0 16
+                     M41 17c-4 5-4 9 0 13"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"/>
+          </svg>
+        </span>
+
+        <span class="brand-copy">
+          <strong data-i18n="brandName">감동 숯골냉면</strong>
+          <small>GAMDONG SUTGOL NAENGMYEON</small>
+        </span>
+
+      </a>
+
+      <p data-i18n="footerLine">
+        정성으로 준비하고, 마음으로 대접합니다.
+      </p>
+
+      <a class="footer-phone" href="tel:+82428229285">
+        ☎ 042-822-9285
+      </a>
+
+    </div>
+
+    <div class="footer-bottom">
+
+      <span>
+        © <span id="year"></span>
+        Gamdong Sutgol Naengmyeon.
+        <span data-i18n="rights">All rights reserved.</span>
+      </span>
+
+      <span class="footer-note" data-i18n="footerNote">
+        맛있게 드시고, 좋은 하루 보내세요.
+      </span>
+
+    </div>
+
+  </footer>
+
+  <!-- BACK TO TOP -->
+  <button id="backToTop"
+          class="back-to-top"
+          aria-label="Back to top">
+    ↑
+  </button>
+
+</body>
+</html>
